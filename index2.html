@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iBox Official Shop - Shopee</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .shopee-gradient {
+            background: linear-gradient(90deg, #ee4d2d, #f55a3c);
+        }
+        
+        .product-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        
+        .category-item:hover {
+            background-color: #f8f9fa;
+            border-left: 4px solid #ee4d2d;
+        }
+        
+        .badge {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            background: #ee4d2d;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+        
+        .discount-badge {
+            background: #ff6b6b;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+        
+        .rating-star {
+            color: #ffc107;
+        }
+        
+        .nav-link:hover {
+            color: #ee4d2d;
+            border-bottom: 2px solid #ee4d2d;
+        }
+        
+        .promotion-card {
+            border: 1px solid #eee;
+            border-radius: 8px;
+            padding: 16px;
+            background: white;
+            transition: all 0.3s ease;
+        }
+        
+        .promotion-card:hover {
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+        }
+        
+        .feature-icon {
+            width: 40px;
+            height: 40px;
+            background: #f8f9fa;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-sm">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-4">
+                    <img src="https://placehold.co/40x40/ee4d2d/ffffff?text=iBox" alt="iBox Logo" class="rounded-full">
+                    <div>
+                        <h1 class="font-bold text-lg">iBox Official Shop</h1>
+                        <p class="text-xs text-gray-500">Active 2 minutes ago</p>
+                    </div>
+                </div>
+                
+                <div class="flex items-center space-x-4">
+                    <button class="bg-black text-white px-4 py-1 rounded-md text-sm flex items-center space-x-1">
+                        <i class="fas fa-plus"></i>
+                        <span>Follow</span>
+                    </button>
+                    <button class="bg-black text-white px-4 py-1 rounded-md text-sm flex items-center space-x-1">
+                        <i class="fas fa-comments"></i>
+                        <span>Chat</span>
+                    </button>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-6 text-sm">
+                    <div class="text-center">
+                        <div class="font-bold">1.1k</div>
+                        <div class="text-gray-500">Products</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="font-bold">0</div>
+                        <div class="text-gray-500">Following</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="font-bold">2.7m</div>
+                        <div class="text-gray-500">Followers</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="font-bold">4.9 (382.2k Rating)</div>
+                        <div class="text-gray-500">Rating</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="font-bold">100% (Within Hours)</div>
+                        <div class="text-gray-500">Chat Performance</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="font-bold">6 Years Ago</div>
+                        <div class="text-gray-500">Joined</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="bg-white border-b">
+        <div class="container mx-auto px-4">
+            <div class="flex space-x-6 overflow-x-auto py-3">
+                <a href="#" class="nav-link font-medium text-red-600 border-b-2 border-red-600">Home</a>
+                <a href="#" class="nav-link font-medium text-gray-700">All Products</a>
+                <a href="#" class="nav-link font-medium text-gray-700">Spectacular Deals</a>
+                <a href="#" class="nav-link font-medium text-gray-700">Produk Baru</a>
+                <a href="#" class="nav-link font-medium text-gray-700">AirPods</a>
+                <a href="#" class="nav-link font-medium text-gray-700">iPhone</a>
+                <a href="#" class="nav-link font-medium text-gray-700">More ▼</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Promotions -->
+    <section class="container mx-auto px-4 py-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="promotion-card">
+                <div class="flex items-start space-x-3">
+                    <div class="bg-red-100 text-red-700 p-2 rounded-full">
+                        <i class="fas fa-tag"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg">50% off</h3>
+                        <p class="text-sm text-gray-600">Min. Spend Rp0 Capped at Rp20k</p>
+                        <p class="text-xs text-gray-400">24% used, Expiring 5 days left</p>
+                        <button class="mt-2 bg-red-600 text-white px-3 py-1 rounded-md text-sm">Claim</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="promotion-card">
+                <div class="flex items-start space-x-3">
+                    <div class="bg-red-100 text-red-700 p-2 rounded-full">
+                        <i class="fas fa-tag"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg">Rp50k off</h3>
+                        <p class="text-sm text-gray-600">Min. Spend Rp999k</p>
+                        <p class="text-xs text-gray-400">Specific Product(s) • 87% used, Valid Thru 2023</p>
+                        <button class="mt-2 bg-red-600 text-white px-3 py-1 rounded-md text-sm">Claim</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recommended Products -->
+    <section class="container mx-auto px-4 py-6">
+        <div class="flex justify-between items-center mb-4">
+            <h2 class="text-xl font-bold">RECOMMENDED FOR YOU</h2>
+            <a href="#" class="text-red-600 text-sm font-medium">See All ></a>
+        </div>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-4">
+            <!-- Product 1 -->
+            <div class="product-card bg-white rounded-lg overflow-hidden shadow-sm transition-all duration-300">
+                <div class="relative">
+                    <img src="https://placehold.co/200x200/ffffff/333333?text=Apple+iPhone+15" alt="Apple iPhone 15" class="w-full h-48 object-cover">
+                    <div class="badge">NEW</div>
+                    <div class="absolute bottom-2 left-2">
+                        <span class="bg-red-500 text-white text-xs px-2 py-1 rounded-full">20% OFF</span>
+                    </div>
+                </div>
+                <div class="p-3">
+                    <h3 class="font-semibold text-sm line-clamp-2">Apple iPhone 15 128GB Blue</h3>
+                    <div class="flex items-center mt-1">
+                        <span class="text-yellow-500 text-xs mr-1">★</span>
+                        <span class="text-xs text-gray-600">4.9</span>
+                        <span class="mx-1">•</span>
+                        <span class="text-xs text-gray-600">768+ sold</span>
+                    </div>
+                    <div class="flex items-center justify-between mt-2">
+                        <span class="font-bold text-red-600">Rp 11.249.000</span>
+                        <span class="text-xs text-gray-500 line-through">Rp 14.000.000</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product 2 -->
+            <div class="product-card bg-white rounded-lg overflow-hidden shadow-sm transition-all duration-300">
+                <div class="relative">
+                    <img src="https://placehold.co/200x200/ffffff/333333?text=Apple+iPhone+15" alt="Apple iPhone 15" class="w-full h-48 object-cover">
+                    <div class="badge">BESTSELLER</div>
+                    <div class="absolute bottom-2 left-2">
+                        <span class="bg-red-500 text-white text-xs px-2 py-1 rounded-full">25% OFF</span>
+                    </div>
+                </div>
+                <div class="p-3">
+                    <h3 class="font-semibold text-sm line-clamp-2">Apple iPhone 15 256GB Pink</h3>
+                    <div class="flex items-center mt-1">
+                        <span class="text-yellow-500 text-xs mr-1">★</span>
+                        <span class="text-xs text-gray-600">4.8</span>
+                        <span class="mx-1">•</span>
+                        <span class="text-xs text-gray-600">908+ sold</span>
+                    </div>
+                    <div class="flex items-center justify-between mt-2">
+                        <span class="font-bold text-red-600">Rp 11.249.000</span>
+                        <span class="text-xs text-gray-500 line-through">Rp 15.000.000</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product 3 -->
+            <div class="product-card bg-white rounded-lg overflow-hidden shadow-sm transition-all duration-300">
+                <div class="relative">
+                    <img src="https://placehold.co/200x200/ffffff/333333?text=Apple+iPhone+15" alt="Apple iPhone 15" class="w-full h-48 object-cover">
+                    <div class="badge">HOT</div>
+                    <div class="absolute bottom-2 left-2">
+                        <span class="bg-red-500 text-white text-xs px-2 py-1 rounded-full">20% OFF</span>
+                    </div>
+                </div>
+                <div class="p-3">
+                    <h3 class="font-semibold text-sm line-clamp-2">Apple iPhone 15 256GB Blue</h3>
+                    <div class="flex items-center mt-1">
+                        <span class="text-yellow-500 text-xs mr-1">★</span>
+                        <span class="text-xs text-gray-600">4.9</span>
+                        <span class="mx-1">•</span>
+                        <span class="text-xs text-gray-600">653 sold</span>
+                    </div>
+                    <div class="flex items-center justify-between mt-2">
+                        <span class="font-bold text-red-600">Rp 12.749.000</span>
+                        <span class="text-xs text-gray-500 line-through">Rp 16.000.000</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product 4 -->
+            <div class="product-card bg-white rounded-lg overflow-hidden shadow-sm transition-all duration-300">
+                <div class="relative">
+                    <img src="https://placehold.co/200x200/ffffff/333333?text=Apple+iPhone+13" alt="Apple iPhone 13" class="w-full h-48 object-cover">
+                    <div class="badge">SALE</div>
+                    <div class="absolute bottom-2 left-2">
+                        <span class="bg-red-500 text-white text-xs px-2 py-1 rounded-full">40% OFF</span>
+                    </div>
+                </div>
+                <div class="p-3">
+                    <h3 class="font-semibold text-sm line-clamp-2">Apple iPhone 13 128GB Midnight</h3>
+                    <div class="flex items-center mt-1">
+                        <span class="text-yellow-500 text-xs mr-1">★</span>
+                        <span class="text-xs text-gray-600">4.9</span>
+                        <span class="mx-1">•</span>
+                        <span class="text-xs text-gray-600">1056+ sold</span>
+                    </div>
+                    <div class="flex items-center justify-between mt-2">
+                        <span class="font-bold text-red-600">Rp 8.249.000</span>
+                        <span class="text-xs text-gray-500 line-through">Rp 14.000.000</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product 5 -->
+            <div class="product-card bg-white rounded-lg overflow-hidden shadow-sm transition-all duration-300">
+                <div class="relative">
+                    <img src="https://placehold.co/200x200/ffffff/333333?text=Apple+iPhone+16" alt="Apple iPhone 16" class="w-full h-48 object-cover">
+                    <div class="badge">NEW</div>
+                    <div class="absolute bottom-2 left-2">
+                        <span class="bg-red-500 text-white text-xs px-2 py-1 rounded-full">20% OFF</span>
+                    </div>
+                </div>
+                <div class="p-3">
+                    <h3 class="font-semibold text-sm line-clamp-2">Apple iPhone 16 Pro Max</h3>
+                    <div class="flex items-center mt-1">
+                        <span class="text-yellow-500 text-xs mr-1">★</span>
+                        <span class="text-xs text-gray-600">4.9</span>
+                        <span class="mx-1">•</span>
+                        <span class="text-xs text-gray-600">598+ sold</span>
+                    </div>
+                    <div class="flex items-center justify-between mt-2">
+                        <span class="font-bold text-red-600">Rp 21.999.000</span>
+                        <span class="text-xs text-gray-500 line-through">Rp 28.000.000</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product 6 -->
+            <div class="product-card bg-white rounded-lg overflow-hidden shadow-sm transition-all duration-300">
+                <div class="relative">
+                    <img src="https://placehold.co/200x200/ffffff/333333?text=Apple+iPhone+16" alt="Apple iPhone 16" class="w-full h-48 object-cover">
+                    <div class="badge">BESTSELLER</div>
+                    <div class="absolute bottom-2 left-2">
+                        <span class="bg-red-500 text-white text-xs px-2 py-1 rounded-full">15% OFF</span>
+                    </div>
+                </div>
+                <div class="p-3">
+                    <h3 class="font-semibold text-sm line-clamp-2">Apple iPhone 16</h3>
+                    <div class="flex items-center mt-1">
+                        <span class="text-yellow-500 text-xs mr-1">★</span>
+                        <span class="text-xs text-gray-600">4.8</span>
+                        <span class="mx-1">•</span>
+                        <span class="text-xs text-gray-600">876+ sold</span>
+                    </div>
+                    <div class="flex items-center justify-between mt-2">
+                        <span class="font-bold text-red-600">Rp 14.999.000</span>
+                        <span class="text-xs text-gray-500 line-through">Rp 18.000.000</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Announcement Banner -->
+    <section class="container mx-auto px-4 py-6">
+        <div class="bg-white rounded-lg p-6 shadow-sm">
+            <div class="text-center">
+                <h2 class="text-2xl font-bold mb-2">Pesanan untuk iPhone 17 dengan semua metode pembayaran yang belum dibayarkan lebih dari 1 jam, akan batal secara otomatis.</h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="container mx-auto px-4 py-6">
+        <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
+            <div class="text-center p-4">
+                <div class="feature-icon">
+                    <i class="fas fa-shield-alt text-red-600"></i>
+                </div>
+                <h3 class="font-bold text-sm mt-2">GARANSI RESMI</h3>
+            </div>
+            <div class="text-center p-4">
+                <div class="feature-icon">
+                    <i class="fas fa-percentage text-red-600"></i>
+                </div>
+                <h3 class="font-bold text-sm mt-2">0% CICILAN S.D. 24 BULAN</h3>
+            </div>
+            <div class="text-center p-4">
+                <div class="feature-icon">
+                    <i class="fas fa-gem text-red-600"></i>
+                </div>
+                <h3 class="font-bold text-sm mt-2">POIN MYERASPACE</h3>
+            </div>
+            <div class="text-center p-4">
+                <div class="feature-icon">
+                    <i class="fas fa-truck text-red-600"></i>
+                </div>
+                <h3 class="font-bold text-sm mt-2">GRATIS ONGKIR*</h3>
+            </div>
+            <div class="text-center p-4">
+                <div class="feature-icon">
+                    <i class="fas fa-wrench text-red-600"></i>
+                </div>
+                <h3 class="font-bold text-sm mt-2">JARINGAN SERVIS RESMI</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Warning Banner -->
+    <section class="container mx-auto px-4 py-3">
+        <div class="bg-red-50 border-l-4 border-red-500 p-3">
+            <div class="flex items-start">
+                <i class="fas fa-exclamation-triangle text-red-500 mr-2 mt-1"></i>
+                <div>
+                    <strong class="text-red-700">Waspadai Penipuan!</strong> Semua komunikasi perihal pesanan dan paket Anda hanya melalui chat iBox Official Shop @ Shopee
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category Filter -->
+    <section class="container mx-auto px-4 py-6">
+        <div class="flex flex-col md:flex-row gap-4">
+            <!-- Categories -->
+            <div class="w-full md:w-64 bg-white rounded-lg shadow-sm">
+                <div class="p-4 border-b">
+                    <h3 class="font-bold">Category</h3>
+                </div>
+                <div class="p-4">
+                    <ul class="space-y-2">
+                        <li class="category-item cursor-pointer p-2 rounded-md">All Products</li>
+                        <li class="category-item cursor-pointer p-2 rounded-md">Spectacular Deals</li>
+                        <li class="category-item cursor-pointer p-2 rounded-md">Produk Baru</li>
+                        <li class="category-item cursor-pointer p-2 rounded-md">AirPods</li>
+                        <li class="category-item cursor-pointer p-2 rounded-md">iPhone</li>
+                        <li class="category-item cursor-pointer p-2 rounded-md">iPad</li>
+                        <li class="category-item cursor-pointer p-2 rounded-md">Mac</li>
+                        <li class="category-item cursor-pointer p-2 rounded-md">Aksesoris Apple</li>
+                        <li class="category-item cursor-pointer p-2 rounded-md">Aksesoris Lainnya</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Products Grid -->
+            <div class="flex-1">
+                <div class="flex justify-between items-center mb-4">
+                    <div class="flex items-center space-x-2">
+                        <span>Sort by:</span>
+                        <button class="bg-red-600 text-white px-3 py-1 rounded-md text-sm">Popular</button>
+                        <button class="bg-gray-200 text-gray-700 px-3 py-1 rounded-md text-sm">Latest</button>
+                        <button class="bg-gray-200 text-gray-700 px-3 py-1 rounded-md text-sm">Top Sales</button>
+                        <button class="bg-gray-200 text-gray-700 px-3 py-1 rounded-md text-sm">Price</button>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <span class="text-sm">1/7</span>
+                        <button class="bg-gray-200 text-gray-700 px-2 py-1 rounded-md"><i class="fas fa-chevron-left"></i></button>
+                        <button class="bg-gray-200 text-gray-700 px-2 py-1 rounded-md"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+                    <!-- Product 1 -->
+                    <div class="product-card bg-white rounded-lg overflow-hidden shadow-sm transition-all duration-300">
+                        <div class="relative">
+                            <img src="https://placehold.co/200x200/ffffff/333333?text=Apple+iPhone+15" alt="Apple iPhone 15" class="w-full h-48 object-cover">
+                            <div class="badge">NEW</div>
+                            <div class="absolute bottom-2 left-2">
+                                <span class="bg-red-500 text-white text-xs px-2 py-1 rounded-full">20% OFF</span>
+                            </div>
+                        </div>
+                        <div class="p-3">
+                            <h3 class="font-semibold text-sm line-clamp-2">Apple iPhone 15 128GB Pink</h3>
+                            <div class="flex items-center mt-1">
+                                <span class="text-yellow-500 text-xs mr-1">★</span>
+                                <span class="text-xs text-gray-600">4.9</span>
+                                <span class="mx-1">•</span>
+                                <span class="text-xs text-gray-600">908+ sold</span>
+                            </div>
+                            <div class="flex items-center justify-between mt-2">
+                                <span class="font-bold text-red-600">Rp 11.249.000</span>
+                                <span class="text-xs text-gray-500 line-through">Rp 14.000.000</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 2 -->
+                    <div class="product-card bg-white rounded-lg overflow-hidden shadow-sm transition-all duration-300">
+                        <div class="relative">
+                            <img src="https://placehold.co/200x200/ffffff/333333?text=Apple+iPhone+13" alt="Apple iPhone 13" class="w-full h-48 object-cover">
+                            <div class="badge">SALE</div>
+                            <div class="absolute bottom-2 left-2">
+                                <span class="bg-red-500 text-white text-xs px-2 py-1 rounded-full">40% OFF</span>
+                            </div>
+                        </div>
+                        <div class="p-3">
+                            <h3 class="font-semibold text-sm line-clamp-2">Apple iPhone 13 128GB Blue</h3>
+                            <div class="flex items-center mt-1">
+                                <span class="text-yellow-500 text-xs mr-1">★</span>
+                                <span class="text-xs text-gray-600">4.9</span>
+                                <span class="mx-1">•</span>
+                                <span class="text-xs text-gray-600">1056+ sold</span>
+                            </div>
+                            <div class="flex items-center justify-between mt-2">
+                                <span class="font-bold text-red-600">Rp 8.249.000</span>
+                                <span class="text-xs text-gray-500 line-through">Rp 14.000.000</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 3 -->
+                    <div class="product-card bg-white rounded-lg overflow-hidden shadow-sm transition-all duration-300">
+                        <div class="relative">
+                            <img src="https://placehold.co/200x200/ffffff/333333?text=Apple+iPhone+15" alt="Apple iPhone 15" class="w-full h-48 object-cover">
+                            <div class="badge">HOT</div>
+                            <div class="absolute bottom-2 left-2">
+                                <span class="bg-red-500 text-white text-xs px-2 py-1 rounded-full">20% OFF</span>
+                            </div>
+                        </div>
+                        <div class="p-3">
+                            <h3 class="font-semibold text-sm line-clamp-2">Apple iPhone 15 256GB Blue</h3>
+                            <div class="flex items-center mt-1">
+                                <span class="text-yellow-500 text-xs mr-1">★</span>
+                                <span class="text-xs text-gray-600">4.9</span>
+                                <span class="mx-1">•</span>
+                                <span class="text-xs text-gray-600">653 sold</span>
+                            </div>
+                            <div class="flex items-center justify-between mt-2">
+                                <span class="font-bold text-red-600">Rp 12.749.000</span>
+                                <span class="text-xs text-gray-500 line-through">Rp 16.000.000</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 4 -->
+                    <div class="product-card bg-white rounded-lg overflow-hidden shadow-sm transition-all duration-300">
+                        <div class="relative">
+                            <img src="https://placehold.co/200x200/ffffff/333333?text=Charger" alt="Charger" class="w-full h-48 object-cover">
+                            <div class="badge">BESTSELLER</div>
+                            <div class="absolute bottom-2 left-2">
+                                <span class="bg-red-500 text-white text-xs px-2 py-1 rounded-full">25% OFF</span>
+                            </div>
+                        </div>
+                        <div class="p-3">
+                            <h3 class="font-semibold text-sm line-clamp-2">iBox 20W USB-C Power Adapter</h3>
+                            <div class="flex items-center mt-1">
+                                <span class="text-yellow-500 text-xs mr-1">★</span>
+                                <span class="text-xs text-gray-600">4.8</span>
+                                <span class="mx-1">•</span>
+                                <span class="text-xs text-gray-600">1056+ sold</span>
+                            </div>
+                            <div class="flex items-center justify-between mt-2">
+                                <span class="font-bold text-red-600">Rp 499.000</span>
+                                <span class="text-xs text-gray-500 line-through">Rp 650.000</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 5 -->
+                    <div class="product-card bg-white rounded-lg overflow-hidden shadow-sm transition-all duration-300">
+                        <div class="relative">
+                            <img src="https://placehold.co/200x200/ffffff/333333?text=Apple+iPhone+16" alt="Apple iPhone 16" class="w-full h-48 object-cover">
+                            <div class="badge">NEW</div>
+                            <div class="absolute bottom-2 left-2">
+                                <span class="bg-red-500 text-white text-xs px-2 py-1 rounded-full">20% OFF</span>
+                            </div>
+                        </div>
+                        <div class="p-3">
+                            <h3 class="font-semibold text-sm line-clamp-2">Apple iPhone 16 Pro Max</h3>
+                            <div class="flex items-center mt-1">
+                                <span class="text-yellow-500 text-xs mr-1">★</span>
+                                <span class="text-xs text-gray-600">4.9</span>
+                                <span class="mx-1">•</span>
+                                <span class="text-xs text-gray-600">598+ sold</span>
+                            </div>
+                            <div class="flex items-center justify-between mt-2">
+                                <span class="font-bold text-red-600">Rp 21.999.000</span>
+                                <span class="text-xs text-gray-500 line-through">Rp 28.000.000</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 6 -->
+                    <div class="product-card bg-white rounded-lg overflow-hidden shadow-sm transition-all duration-300">
+                        <div class="relative">
+                            <img src="https://placehold.co/200x200/ffffff/333333?text=AirPods" alt="AirPods" class="w-full h-48 object-cover">
+                            <div class="badge">SALE</div>
+                            <div class="absolute bottom-2 left-2">
+                                <span class="bg-red-500 text-white text-xs px-2 py-1 rounded-full">30% OFF</span>
+                            </div>
+                        </div>
+                        <div class="p-3">
+                            <h3 class="font-semibold text-sm line-clamp-2">AirPods Pro 2nd Gen</h3>
+                            <div class="flex items-center mt-1">
+                                <span class="text-yellow-500 text-xs mr-1">★</span>
+                                <span class="text-xs text-gray-600">4.9</span>
+                                <span class="mx-1">•</span>
+                                <span class="text-xs text-gray-600">1200+ sold</span>
+                            </div>
+                            <div class="flex items-center justify-between mt-2">
+                                <span class="font-bold text-red-600">Rp 3.499.000</span>
+                                <span class="text-xs text-gray-500 line-through">Rp 4.500.000</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 7 -->
+                    <div class="product-card bg-white rounded-lg overflow-hidden shadow-sm transition-all duration-300">
+                        <div class="relative">
+                            <img src="https://placehold.co/200x200/ffffff/333333?text=MacBook" alt="MacBook" class="w-full h-48 object-cover">
+                            <div class="badge">HOT</div>
+                            <div class="absolute bottom-2 left-2">
+                                <span class="bg-red-500 text-white text-xs px-2 py-1 rounded-full">15% OFF</span>
+                            </div>
+                        </div>
+                        <div class="p-3">
+                            <h3 class="font-semibold text-sm line-clamp-2">MacBook Air M2 256GB</h3>
+                            <div class="flex items-center mt-1">
+                                <span class="text-yellow-500 text-xs mr-1">★</span>
+                                <span class="text-xs text-gray-600">4.9</span>
+                                <span class="mx-1">•</span>
+                                <span class="text-xs text-gray-600">800+ sold</span>
+                            </div>
+                            <div class="flex items-center justify-between mt-2">
+                                <span class="font-bold text-red-600">Rp 14.999.000</span>
+                                <span class="text-xs text-gray-500 line-through">Rp 18.000.000</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 8 -->
+                    <div class="product-card bg-white rounded-lg overflow-hidden shadow-sm transition-all duration-300">
+                        <div class="relative">
+                            <img src="https://placehold.co/200x200/ffffff/333333?text=iPad" alt="iPad" class="w-full h-48 object-cover">
+                            <div class="badge">BESTSELLER</div>
+                            <div class="absolute bottom-2 left-2">
+                                <span class="bg-red-500 text-white text-xs px-2 py-1 rounded-full">20% OFF</span>
+                            </div>
+                        </div>
+                        <div class="p-3">
+                            <h3 class="font-semibold text-sm line-clamp-2">iPad Air 5th Gen 64GB</h3>
+                            <div class="flex items-center mt-1">
+                                <span class="text-yellow-500 text-xs mr-1">★</span>
+                                <span class="text-xs text-gray-600">4.8</span>
+                                <span class="mx-1">•</span>
+                                <span class="text-xs text-gray-600">750+ sold</span>
+                            </div>
+                            <div class="flex items-center justify-between mt-2">
+                                <span class="font-bold text-red-600">Rp 8.999.000</span>
+                                <span class="text-xs text-gray-500 line-through">Rp 11.000.000</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 mt-10">
+        <div class="container mx-auto px-4">
+            <div class="text-center">
+                <p class="text-sm">© 2025 iBox Official Shop. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
